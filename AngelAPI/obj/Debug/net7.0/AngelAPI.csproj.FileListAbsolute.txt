@@ -31,3 +31,14 @@
 /home/darkne55/RiderProjects/AngelAPI/AngelAPI/obj/Debug/net7.0/AngelAPI.pdb
 /home/darkne55/RiderProjects/AngelAPI/AngelAPI/obj/Debug/net7.0/AngelAPI.genruntimeconfig.cache
 /home/darkne55/RiderProjects/AngelAPI/AngelAPI/obj/Debug/net7.0/ref/AngelAPI.dll
+/home/darkne55/RiderProjects/AngelAPI/AngelAPI/bin/Debug/net7.0/Humanizer.dll
+/home/darkne55/RiderProjects/AngelAPI/AngelAPI/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+/home/darkne55/RiderProjects/AngelAPI/AngelAPI/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/darkne55/RiderProjects/AngelAPI/AngelAPI/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+/home/darkne55/RiderProjects/AngelAPI/AngelAPI/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+/home/darkne55/RiderProjects/AngelAPI/AngelAPI/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/home/darkne55/RiderProjects/AngelAPI/AngelAPI/bin/Debug/net7.0/Mono.TextTemplating.dll
+/home/darkne55/RiderProjects/AngelAPI/AngelAPI/bin/Debug/net7.0/Newtonsoft.Json.dll
+/home/darkne55/RiderProjects/AngelAPI/AngelAPI/bin/Debug/net7.0/Npgsql.dll
+/home/darkne55/RiderProjects/AngelAPI/AngelAPI/bin/Debug/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/home/darkne55/RiderProjects/AngelAPI/AngelAPI/bin/Debug/net7.0/System.CodeDom.dll
