@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Newtonsoft.Json;
 
 namespace AngelAPI.Entities;
 
@@ -29,6 +28,6 @@ public partial class Visitor
     public string Numbers { get; set; } = null!;
 
     public bool? IsBlacklist { get; set; }
-    [JsonIgnore]
+
     public virtual ICollection<AppVisitor> AppVisitors { get; } = new List<AppVisitor>();
 }

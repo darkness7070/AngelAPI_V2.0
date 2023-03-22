@@ -99,8 +99,10 @@ public partial class PostgresContext : DbContext
             entity.Property(e => e.ArrivalTime).HasColumnName("arrival_time");
             entity.Property(e => e.IdPurpose).HasColumnName("id_purpose");
             entity.Property(e => e.IdSubdivision).HasColumnName("id_subdivision");
+            entity.Property(e => e.IsSingle).HasColumnName("is_single");
             entity.Property(e => e.LeavingTime).HasColumnName("leaving_time");
             entity.Property(e => e.Passport).HasColumnName("passport");
+            entity.Property(e => e.Status).HasColumnName("status");
             entity.Property(e => e.ValidatyFrom).HasColumnName("validaty_from");
             entity.Property(e => e.ValidatyTo).HasColumnName("validaty_to");
 
