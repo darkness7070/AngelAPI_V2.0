@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/home/darkne55/RiderProjects/AngelAPI/AngelAPI/AngelAPI.csproj": {}
+    "C:\\Users\\maksi\\RiderProjects\\AngelAPI_V2.0\\AngelAPI\\AngelAPI.csproj": {}
   },
   "projects": {
-    "/home/darkne55/RiderProjects/AngelAPI/AngelAPI/AngelAPI.csproj": {
+    "C:\\Users\\maksi\\RiderProjects\\AngelAPI_V2.0\\AngelAPI\\AngelAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/darkne55/RiderProjects/AngelAPI/AngelAPI/AngelAPI.csproj",
+        "projectUniqueName": "C:\\Users\\maksi\\RiderProjects\\AngelAPI_V2.0\\AngelAPI\\AngelAPI.csproj",
         "projectName": "AngelAPI",
-        "projectPath": "/home/darkne55/RiderProjects/AngelAPI/AngelAPI/AngelAPI.csproj",
-        "packagesPath": "/home/darkne55/.nuget/packages/",
-        "outputPath": "/home/darkne55/RiderProjects/AngelAPI/AngelAPI/obj/",
+        "projectPath": "C:\\Users\\maksi\\RiderProjects\\AngelAPI_V2.0\\AngelAPI\\AngelAPI.csproj",
+        "packagesPath": "C:\\Users\\maksi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maksi\\RiderProjects\\AngelAPI_V2.0\\AngelAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/darkne55/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\maksi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -84,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

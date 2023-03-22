@@ -15,6 +15,7 @@ public class WebController : Controller
     {
         return Ok("OK");
     }
+
     /// <summary>
     /// Возвращает список подразделений
     /// </summary>
@@ -24,5 +25,4 @@ public class WebController : Controller
     {
         return Ok("OK");
     }
-    
 }
