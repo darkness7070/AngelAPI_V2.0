@@ -73,16 +73,28 @@ public class GeneralController : Controller
     [Route("general/applications")]
     public IActionResult Applications([FromBody]RequestGeneral.Applications request)
     {
-        return request.isAdmin ? Ok(JsonConvert.SerializeObject(_db.Applications.ToList())) :
-            _db.Users.FirstOrDefault(x => x.Token == request.Token) == null ? Unauthorized() :
-            Ok(JsonConvert.SerializeObject(
-                    _db.AppUsers
-                        .Where(x => x.IdUserNavigation.Token == request.Token)
-                        //.Include(x => x.IdAppNavigation.IdPurposeNavigation)                                  
-                        //.Include(x => x.IdAppNavigation.IdSubdivisionNavigation.IdSubdivisionNavigation)      
-                        //.Include(x => x.IdAppNavigation.IdSubdivisionNavigation.IdWorkerNavigation)           
-                        .Select(x => x.IdAppNavigation)
-                        .ToList(),
+        List<ResponseGeneral.InfoApplications> apps = new();
+        if (request.isAdmin)
+        {
+            foreach (var item in _db.Applications.ToList())
+            {
+                apps.Add(new ResponseGeneral.InfoApplications(item,
+                    _db.WorkerSubdivisions.Where(x=>x.Id == item.IdSubdivision).Select(x=>x.IdWorkerNavigation).ToList(),
+                    _db.WorkerSubdivisions.Where(x=>x.Id == item.IdSubdivision).Select(x=>x.IdSubdivisionNavigation).ToList()
+                ));
+            }
+        }
+        else
+        {
+            foreach (var item in _db.AppUsers.Where(x => x.IdUserNavigation.Token == request.Token).Select(x => x.IdAppNavigation).ToList())
+            {
+                apps.Add(new ResponseGeneral.InfoApplications(item,
+                    _db.WorkerSubdivisions.Where(x=>x.Id == item.IdSubdivision).Select(x=>x.IdWorkerNavigation).ToList(),
+                    _db.WorkerSubdivisions.Where(x=>x.Id == item.IdSubdivision).Select(x=>x.IdSubdivisionNavigation).ToList()
+                ));
+            }
+        }
+        return Ok(JsonConvert.SerializeObject(apps,
                     new JsonSerializerSettings
                     {
                         ReferenceLoopHandling = ReferenceLoopHandling.Ignore

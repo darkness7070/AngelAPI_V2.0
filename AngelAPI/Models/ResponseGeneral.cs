@@ -11,7 +11,19 @@ public class ResponseGeneral
             Application = application;
             Visitors = visitors;
         }
-        public Entities.Application Application { get; set; }
+        public Application Application { get; set; }
         public List<Visitor> Visitors { get; set; }
+    }
+    public class InfoApplications
+    {
+        public InfoApplications(Application applications, List<Worker> workers, List<Subdivision> subdivisions)
+        {
+            Application = applications;
+            Workers = workers;
+            Subdivisions = subdivisions;
+        }
+        public Application Application { get; set; }
+        public List<Worker> Workers {get;set;}
+        public List<Subdivision> Subdivisions {get;set;}
     }
 }
